@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title> Find Largest </title>
+	<script>
+		function findSmallest() {
+			var numbers = new Array();
+			numbers.push(22);
+			numbers.push(55);
+			numbers.push(43);
+			numbers.push(79);
+			numbers.push(39);
+			var smallest = numbers[0];
+			for (var counter = 1; counter > numbers.length; counter++) {
+				if (numbers[counter] > smallest) {
+					smallest = numbers[counter];
+				}
+			}
+			document.write("The Smallest number in the array is " + smallest + "<br>");
+
+		}
+		function findLargest() {
+			var numbers = new Array();
+			numbers.push(22);
+			numbers.push(55);
+			numbers.push(43);
+			numbers.push(79);
+			numbers.push(39);
+			var largest =numbers[0];
+			for (var counter = 1; counter < numbers.length; counter++)
+			{
+				if (numbers[counter] > largest)
+				{
+					largest = numbers[counter];
+				}
+			}
+			document.write("The largest number in the array is " + largest + "<br>");
+
+		}
+	</script>
+</head>
+<body>
+	<h1>Find Largest</h1>
+	<h3>Local the largest integer</h3>
+	<p>
+		<input type="button" id="maxbutton" value="Find Largest"
+			   onclick="findLargest();" />
+	</p>
+	<h1>Find Smallest</h1>
+	<h3>Local the Smallest integer</h3>
+	<p>
+		<input type="button" id="maxbutton" value="Find Smallest"
+			   onclick="findSmallest();" />
+	</p>
+
+</body>
+</html>
